@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 214 100% 27%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 214 100% 27%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.85) 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Blog Content Styling */
+.blog-content {
+  @apply text-lg leading-relaxed max-w-none;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold text-gray-900 mt-10 mb-6 pb-3 border-b-2 border-primary/20 relative;
+}
+
+.blog-content h2::before {
+  content: '';
+  @apply absolute left-0 bottom-0 w-12 h-0.5 bg-primary;
+}
+
+.blog-content h3 {
+  @apply text-xl font-semibold text-gray-800 mt-8 mb-4 flex items-center;
+}
+
+.blog-content h3::before {
+  content: '▶';
+  @apply text-primary mr-3 text-sm;
+}
+
+.blog-content p {
+  @apply mb-6 text-gray-700 leading-relaxed;
+}
+
+.blog-content ul {
+  @apply mb-8 space-y-3 bg-gray-50 p-6 rounded-lg border-l-4 border-primary/30;
+}
+
+.blog-content li {
+  @apply flex items-start space-x-3 text-gray-700 relative pl-6;
+}
+
+.blog-content li::before {
+  content: '•';
+  @apply absolute left-0 top-0 text-primary font-bold text-lg w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center text-xs;
+}
+
+.blog-content strong {
+  @apply font-semibold text-gray-900 bg-yellow-50 px-1 rounded;
+}
+
+.blog-content a {
+  @apply text-primary hover:text-primary/80 underline decoration-2 underline-offset-2 transition-all duration-200 hover:bg-primary/5 px-1 rounded;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-primary bg-primary/5 p-6 my-8 rounded-r-lg italic text-gray-700;
+}
+
+.blog-content blockquote::before {
+  content: '"';
+  @apply text-4xl text-primary/40 font-serif absolute -mt-2;
+}
+
+/* Special styling for call-to-action paragraphs */
+.blog-content p:has(strong:first-child) {
+  @apply bg-gradient-to-r from-blue-50 to-primary/5 p-6 rounded-lg border border-primary/20 font-medium;
+}
+
+/* Code styling */
+.blog-content code {
+  @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono text-gray-800 border;
+}
+
+/* Emphasis styling */
+.blog-content em {
+  @apply italic text-primary font-medium;
+}
