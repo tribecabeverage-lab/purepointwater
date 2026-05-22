@@ -37,33 +37,23 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const clientId = 'sb_564b20225c466bf596dc86f72c56b993';
-    const domain = 'purepointwatersolutions.com';
-    const endpoint = 'https://us-central1-sb-services-13a91.cloudfunctions.net/submitLead';
-
     try {
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          apiKey: clientId,
-          domain: domain,
-          leadData: {
-            ...formData,
-            source: 'contact-form',
-            timestamp: new Date().toISOString()
-          }
-        })
+      // Submit to Netlify Forms (configured to email info@tribecabeverage.com)
+      const formBody = new URLSearchParams();
+      formBody.append('form-name', 'contact');
+      formBody.append('source', 'contact-form');
+      Object.entries(formData).forEach(([k, v]) => {
+        formBody.append(k, String(v));
       });
 
-      const result = await response.json();
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody.toString()
+      });
 
       if (response.ok) {
         setSubmitSuccess(true);
-        
-        // Reset form after success
         setTimeout(() => {
           setSubmitSuccess(false);
           setFormData({
@@ -83,7 +73,7 @@ export default function ContactForm() {
           });
         }, 3000);
       } else {
-        console.error('Lead submission failed:', result);
+        console.error('Form submission failed:', response.status);
         setIsSubmitting(false);
       }
     } catch (error) {
@@ -156,7 +146,9 @@ export default function ContactForm() {
                     </div>
                   </div>
                 ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field" className="space-y-6">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden"><label>Don&#39;t fill this out: <input name="bot-field" /></label></p>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">First Name *</Label>

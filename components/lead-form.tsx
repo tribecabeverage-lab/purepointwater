@@ -36,40 +36,30 @@ export default function LeadForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const clientId = 'sb_564b20225c466bf596dc86f72c56b993';
-    const domain = 'purepointwatersolutions.com';
-    const endpoint = 'https://us-central1-sb-services-13a91.cloudfunctions.net/submitLead';
-
     try {
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          apiKey: clientId,
-          domain: domain,
-          leadData: {
-            ...formData,
-            source: 'hero-lead-form',
-            timestamp: new Date().toISOString()
-          }
-        })
+      // Submit to Netlify Forms
+      const formBody = new URLSearchParams();
+      formBody.append('form-name', 'lead');
+      formBody.append('source', 'lead-form');
+      Object.entries(formData).forEach(([k, v]) => {
+        formBody.append(k, String(v));
       });
 
-      const result = await response.json();
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody.toString()
+      });
 
       if (response.ok) {
         setSubmitSuccess(true);
-        
-        // Reset form after success
         setTimeout(() => {
           setSubmitSuccess(false);
           setFormData({
             firstName: '',
             lastName: '',
-            phone: '',
             email: '',
+            phone: '',
             customerType: '',
             company: '',
             streetAddress: '',
@@ -82,7 +72,7 @@ export default function LeadForm() {
           });
         }, 3000);
       } else {
-        console.error('Lead submission failed:', result);
+        console.error('Form submission failed:', response.status);
         setIsSubmitting(false);
       }
     } catch (error) {
@@ -106,7 +96,9 @@ export default function LeadForm() {
     <Card className="bg-blue-50/95 backdrop-blur-sm shadow-lg border-4 border-blue-400 max-w-md w-full">
       <CardContent className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Get Your Free Quote</h3>
-        <form onSubmit={handleSubmit} className="space-y-3">
+        <form onSubmit={handleSubmit} name="lead" data-netlify="true" data-netlify-honeypot="bot-field" className="space-y-3">
+          <input type="hidden" name="form-name" value="lead" />
+          <p className="hidden"><label>Don&#39;t fill this out: <input name="bot-field" /></label></p>
           <div className="grid grid-cols-2 gap-3">
             <Input
               name="firstName"
