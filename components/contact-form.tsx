@@ -107,8 +107,8 @@ export default function ContactForm() {
                   <Phone className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <p className="font-semibold">Call Us</p>
-                    <a href="tel:203-275-9009" className="text-primary hover:underline text-lg">
-                      203-275-9009
+                    <a href="tel:973-913-4568" className="text-primary hover:underline text-lg">
+                      973-913-4568
                     </a>
                   </div>
                 </div>

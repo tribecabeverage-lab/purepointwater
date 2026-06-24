@@ -42,7 +42,7 @@ export default function RootLayout({
               name: 'Pure Point Water Solutions',
               description: 'Local water solutions serving NY & CT. Bottle-less cooler rentals and 5-gallon jug delivery.',
               url: 'https://purepointwatersolutions.com',
-              telephone: '+1-203-275-9009',
+              telephone: '+1-973-913-4568',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '257 Sound Beach Ave',

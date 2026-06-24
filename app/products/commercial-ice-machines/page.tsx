@@ -45,9 +45,9 @@ export default function CommercialIceMachinesPage() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-400 text-white hover:bg-blue-500" asChild>
-                  <a href="tel:203-275-9009" className="flex items-center space-x-2">
+                  <a href="tel:973-913-4568" className="flex items-center space-x-2">
                     <Phone className="h-5 w-5" />
-                    <span>203-275-9009</span>
+                    <span>973-913-4568</span>
                   </a>
                 </Button>
               </div>
@@ -237,9 +237,9 @@ export default function CommercialIceMachinesPage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300" asChild>
-                  <a href="tel:203-275-9009" className="flex items-center space-x-2">
+                  <a href="tel:973-913-4568" className="flex items-center space-x-2">
                     <Phone className="h-5 w-5" />
-                    <span>Call 203-275-9009</span>
+                    <span>Call 973-913-4568</span>
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-2 hover:border-primary/50 shadow-md hover:shadow-lg transition-all duration-300" asChild>
@@ -326,9 +326,9 @@ export default function CommercialIceMachinesPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="shadow-lg hover:shadow-xl transition-shadow duration-300" asChild>
-                    <a href="tel:203-275-9009" className="flex items-center space-x-2">
+                    <a href="tel:973-913-4568" className="flex items-center space-x-2">
                       <Phone className="h-5 w-5" />
-                      <span>Call 203-275-9009</span>
+                      <span>Call 973-913-4568</span>
                     </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-2 hover:border-primary/50 shadow-md hover:shadow-lg transition-all duration-300" asChild>

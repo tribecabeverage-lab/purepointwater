@@ -80,9 +80,9 @@ export default function Navigation() {
               Blog
             </Link>
             <Button asChild>
-              <a href="tel:203-275-9009" className="flex items-center space-x-2">
+              <a href="tel:973-913-4568" className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>203-275-9009</span>
+                <span>973-913-4568</span>
               </a>
             </Button>
           </div>
@@ -157,9 +157,9 @@ export default function Navigation() {
               </Link>
               <div className="px-3 py-2">
                 <Button className="w-full" asChild>
-                  <a href="tel:203-275-9009" className="flex items-center justify-center space-x-2">
+                  <a href="tel:973-913-4568" className="flex items-center justify-center space-x-2">
                     <Phone className="h-4 w-4" />
-                    <span>203-275-9009</span>
+                    <span>973-913-4568</span>
                   </a>
                 </Button>
               </div>

@@ -182,9 +182,9 @@ export default function LocationPage({ params }: LocationPageProps) {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
-                  <a href="tel:203-275-9009" className="flex items-center space-x-2">
+                  <a href="tel:973-913-4568" className="flex items-center space-x-2">
                     <Phone className="h-5 w-5" />
-                    <span>Call 203-275-9009</span>
+                    <span>Call 973-913-4568</span>
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
