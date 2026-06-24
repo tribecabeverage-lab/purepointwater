@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import { Toaster } from '@/components/ui/sonner';
+import Script from 'next/script';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
@@ -70,6 +71,18 @@ export default function RootLayout({
             }),
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C49RTJ9Y2S"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C49RTJ9Y2S');
+          `}
+        </Script>
       </head>
       <body className={nunito.className}>
         {children}
