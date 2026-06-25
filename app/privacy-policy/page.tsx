@@ -59,7 +59,7 @@ export default function PrivacyPolicyPage() {
               You may withdraw your consent for marketing communications or request that we stop collecting or using your information (where legally permitted) at any time by contacting us at:
             </p>
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
-              <p className="text-gray-700"><strong>Email:</strong> <a href="mailto:dylan@purepointwatersolutions.com" className="text-blue-600 hover:text-blue-700">dylan@purepointwatersolutions.com</a></p>
+              <p className="text-gray-700"><strong>Email:</strong> <a href="mailto:info@tribecabeverage.com" className="text-blue-600 hover:text-blue-700">info@tribecabeverage.com</a></p>
               <p className="text-gray-700 mt-2"><strong>Mail:</strong></p>
               <p className="text-gray-700">Pure Point Water Solutions</p>
               <p className="text-gray-700">257 Sound Beach Ave, Suite G</p>
@@ -160,8 +160,8 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
               <p className="text-gray-700">
-                <a href="mailto:dylan@purepointwatersolutions.com" className="text-blue-600 hover:text-blue-700 font-semibold">
-                  dylan@purepointwatersolutions.com
+                <a href="mailto:info@tribecabeverage.com" className="text-blue-600 hover:text-blue-700 font-semibold">
+                  info@tribecabeverage.com
                 </a>
               </p>
             </div>
