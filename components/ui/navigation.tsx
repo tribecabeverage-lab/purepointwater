@@ -71,6 +71,11 @@ export default function Navigation() {
                     Commercial Ice Machines
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/products/full-catalog">
+                    Full Product Catalog
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Link href="/service-areas" className="text-gray-700 hover:text-primary transition-colors">
@@ -138,6 +143,13 @@ export default function Navigation() {
                     className="block px-3 py-2 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
                   >
                     Commercial Ice Machines
+                  </Link>
+                  <Link
+                    href="/products/full-catalog"
+                    onClick={closeMenu}
+                    className="block px-3 py-2 text-sm text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  >
+                    Full Product Catalog
                   </Link>
                 </div>
               </div>
