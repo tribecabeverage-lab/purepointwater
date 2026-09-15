@@ -11,7 +11,7 @@ import { ArrowLeft, Check, Package, Truck, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: '5-Gallon Jug Delivery | Pure Point Water Solutions',
-  description: 'Pure water delivered to your door. 5-gallon jug delivery with BPA Free Bottles within 30 miles of Old Greenwich, CT. $10 per jug, no hidden fees, no contracts.',
+  description: 'Pure water delivered to your door. 5-gallon jug delivery with BPA Free Bottles within 30 miles of Old Greenwich, CT. Request a quote - no hidden fees, no contracts.',
 };
 
 export default function FiveGallonJugDeliveryPage() {
@@ -91,7 +91,7 @@ export default function FiveGallonJugDeliveryPage() {
               </p>
 
               <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                <p className="text-2xl font-bold text-primary mb-2">$10 per jug — no hidden fees, no contracts</p>
+                <p className="text-2xl font-bold text-primary mb-2">Request a quote — no hidden fees, no contracts</p>
                 <p className="text-sm text-gray-500 mt-2">(For jugs only)</p>
               </div>
 
@@ -189,7 +189,7 @@ export default function FiveGallonJugDeliveryPage() {
                   <Check className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">One Simple Price</p>
-                    <p className="text-gray-700 text-sm">$10 per jug, free delivery within 30 miles of Old Greenwich. That's it.</p>
+                    <p className="text-gray-700 text-sm">Free delivery within 30 miles of Old Greenwich. Request a quote and we'll give you one flat per-jug rate.</p>
                   </div>
                 </div>
               </div>

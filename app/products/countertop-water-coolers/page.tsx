@@ -111,7 +111,7 @@ export default function CountertopWaterCoolersPage() {
               </div>
 
               <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                <p className="text-2xl font-bold text-primary mb-2">Starting at $45/month</p>
+                <p className="text-2xl font-bold text-primary mb-2">Starting at $59.99/month</p>
                 <p className="text-gray-600">Perfect for smaller spaces</p>
                 <p className="text-sm text-primary font-semibold mt-2">Two week free trial available</p>
               </div>

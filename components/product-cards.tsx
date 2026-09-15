@@ -16,7 +16,7 @@ const products = [
   },
   {
     title: '5-Gallon Jug Delivery',
-    description: 'Within ~15 miles of Old Greenwich; $10 per jug, 5-jug minimum',
+    description: 'Within ~15 miles of Old Greenwich; 5-jug minimum',
     icon: Package,
     image: '/Untitled design (25).png',
   },

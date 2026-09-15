@@ -205,11 +205,11 @@ export default function LocationPage({ params }: LocationPageProps) {
                   <div className="space-y-4">
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Bottle-less Systems</h4>
-                      <p className="text-gray-600 text-sm">Starting at $45/month with everything included</p>
+                      <p className="text-gray-600 text-sm">Request a quote — everything included</p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">5-Gallon Delivery</h4>
-                      <p className="text-gray-600 text-sm">$10 per jug (5-jug minimum) + $10/month dispenser rentals • $50 minimum order</p>
+                      <p className="text-gray-600 text-sm">5-jug minimum, dispenser rentals available — request a quote for rates</p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Our Location</h4>
@@ -245,7 +245,7 @@ export default function LocationPage({ params }: LocationPageProps) {
                 <CardDescription>Freestanding bottle-less systems</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-primary mb-2">$50/month</p>
+                <p className="text-lg font-bold text-primary mb-2">Request a quote</p>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/products/bottle-free-water-towers">Learn More</Link>
                 </Button>
@@ -258,7 +258,7 @@ export default function LocationPage({ params }: LocationPageProps) {
                 <CardDescription>Compact filtered water coolers</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-primary mb-2">$45/month</p>
+                <p className="text-2xl font-bold text-primary mb-2">$59.99/month</p>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/products/countertop-water-coolers">Learn More</Link>
                 </Button>
@@ -271,7 +271,7 @@ export default function LocationPage({ params }: LocationPageProps) {
                 <CardDescription>Water + ice production</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-primary mb-2">$75/month</p>
+                <p className="text-lg font-bold text-primary mb-2">Request a quote</p>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/products/ice-machines">Learn More</Link>
                 </Button>
@@ -284,7 +284,7 @@ export default function LocationPage({ params }: LocationPageProps) {
                 <CardDescription>Delivery within ~15 miles</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-primary mb-2">$10/jug</p>
+                <p className="text-lg font-bold text-primary mb-2">Request a quote</p>
                 <Button variant="outline" size="sm" asChild>
                   <Link href="/products/5-gallon-jug-delivery">Learn More</Link>
                 </Button>
