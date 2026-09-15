@@ -96,7 +96,7 @@ export default function IceMachinesPage() {
               </div>
 
               <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                <p className="text-2xl font-bold text-primary mb-2">Starting at $75/month</p>
+                <p className="text-2xl font-bold text-primary mb-2">Request a quote</p>
                 <p className="text-gray-600">Ice production + water filtration</p>
               </div>
 

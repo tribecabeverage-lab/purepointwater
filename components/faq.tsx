@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'Where do you deliver 5-gallon jugs and what does it cost?',
-    answer: 'Within ~15 miles of Old Greenwich. $10 per jug (5-jug minimum) plus $10/month dispenser rentals. No contracts or delivery fees.',
+    answer: 'Within ~15 miles of Old Greenwich, with a 5-jug minimum and dispenser rentals available. No contracts or delivery fees — request a quote and we’ll send your rates.',
   },
 ];
 

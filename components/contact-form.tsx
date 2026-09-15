@@ -123,7 +123,7 @@ export default function ContactForm() {
                   </div>
                 </div>
                 <div className="bg-primary/5 p-4 rounded-lg">
-                  <p className="text-sm text-primary font-medium">Starting at $45/month</p>
+                  <p className="text-sm text-primary font-medium">Starting at $59.99/month</p>
                   <p className="text-sm text-gray-600">Bottleless cooler rentals with everything included</p>
                 </div>
               </CardContent>

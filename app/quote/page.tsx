@@ -77,7 +77,7 @@ export default function QuotePage() {
               <CardHeader>
                 <CardTitle className="text-2xl">Countertop Systems</CardTitle>
                 <CardDescription>Perfect for small offices</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">$45<span className="text-lg text-gray-600">/month</span></div>
+                <div className="text-3xl font-bold text-primary mt-4">$59.99<span className="text-lg text-gray-600">/month</span></div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-left">
@@ -108,7 +108,7 @@ export default function QuotePage() {
                 </div>
                 <CardTitle className="text-2xl">Water Towers</CardTitle>
                 <CardDescription>Ideal for busy offices</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">$50<span className="text-lg text-gray-600">/month</span></div>
+                <div className="text-2xl font-bold text-primary mt-4">Request a quote</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-left">
@@ -136,7 +136,7 @@ export default function QuotePage() {
               <CardHeader>
                 <CardTitle className="text-2xl">Ice Machines</CardTitle>
                 <CardDescription>Water + ice production</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">$75<span className="text-lg text-gray-600">/month</span></div>
+                <div className="text-2xl font-bold text-primary mt-4">Request a quote</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-left">
@@ -164,7 +164,7 @@ export default function QuotePage() {
           <div className="text-center mt-12">
             <div className="bg-gray-50 p-6 rounded-lg max-w-2xl mx-auto">
               <h3 className="font-semibold text-gray-900 mb-2">5-Gallon Jug Delivery</h3>
-              <p className="text-gray-600 mb-2">$10 per jug — no hidden fees, no contracts</p>
+              <p className="text-gray-600 mb-2">Request a quote — no hidden fees, no contracts</p>
               <p className="text-sm text-gray-500">Free delivery within 30 miles of Old Greenwich</p>
             </div>
           </div>
