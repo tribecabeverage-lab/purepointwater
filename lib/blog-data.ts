@@ -1830,7 +1830,7 @@ export const blogPosts: BlogPost[] = [
       <h2>When 5-Gallon Delivery Works Best</h2>
       <p>While bottleless systems offer convenience, there are clear cases where traditional jug delivery makes sense. Businesses without reliable plumbing—like construction trailers in Newtown or outdoor event venues in North Castle—need portable, flexible hydration options.</p>
 
-      <p>Short-term operations also appreciate the flexibility. Pop-up offices in Somers or seasonal businesses in Old Greenwich can avoid installation costs and long-term service agreements. With Pure Point's $10 per jug pricing within 15 miles of Old Greenwich, temporary setups remain efficient and low-commitment.</p>
+      <p>Short-term operations also appreciate the flexibility. Pop-up offices in Somers or seasonal businesses in Old Greenwich can avoid installation costs and long-term service agreements. With Pure Point's simple per-jug pricing within 15 miles of Old Greenwich, temporary setups remain efficient and low-commitment. Request a quote for your rate.</p>
 
       <p>Companies with fluctuating demand also find jug delivery adaptable. A law firm in White Plains handling major trials may see short bursts in consumption. With jug delivery, scaling up or down happens instantly without system adjustments.</p>
 
@@ -2085,7 +2085,7 @@ export const blogPosts: BlogPost[] = [
       <p>For ReadyRefresh customers making the switch before August 31, 2025, we're offering:</p>
       <ul>
         <li>First month free on all bottleless systems</li>
-        <li>Complimentary installation (normally $99 per unit)</li>
+        <li>Complimentary installation</li>
         <li>Jug buy-back credit for unopened inventory</li>
         <li>Rate lock guarantee for 24 months</li>
       </ul>
