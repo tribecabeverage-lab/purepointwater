@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { leadContext } from '@/lib/lead-source';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -44,6 +45,8 @@ export default function LeadForm() {
       Object.entries(formData).forEach(([k, v]) => {
         formBody.append(k, String(v));
       });
+      // Where they came from (first visit / ad click), the page and the device.
+      Object.entries(leadContext()).forEach(([k, v]) => formBody.append(k, v));
 
       const response = await fetch('/', {
         method: 'POST',

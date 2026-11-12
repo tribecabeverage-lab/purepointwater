@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import { Toaster } from '@/components/ui/sonner';
 import Script from 'next/script';
+import SourceTracker from '@/components/source-tracker';
 
 const nunito = Nunito({ subsets: ['latin'] });
 
@@ -98,6 +99,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={nunito.className}>
+        <SourceTracker />
         {children}
         <Toaster />
       </body>
